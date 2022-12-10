@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(40deg, #00d5ff 0%, #fb7703 100%);
+    transition: all 0.3s ease-in;
+}
+/* body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+} */
+header {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    color: white;
+   
+}
+header h1 {
+    text-shadow: 1px 1px 2px black;
+}
+form {
+    display: flex;
+    padding: auto;
+    width: 100vw;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+   
+}
+form button , form input {
+    padding: 0.5rem;
+    border: none;
+    background-color: white;
+}
+form select {
+    margin-left: 60px;
+    outline: none;
+    border: none;
+    
+}
+form button{
+    color: rgb(246, 31, 3);
+    background-color: white;
+    transition:  all 0.3s ease-in;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 1px 1px 2px black;
+}
+form button:hover{
+    background-color:rgb(246, 31, 3);
+    color: white;
+    
+}
+
+form input {
+    width: 350px;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 20px;
+    outline: none;
+    font-weight: larger;
+    font-size: 1.01rem;
+    box-shadow: 1px 1px 3px black;
+   
+}
+form button i {
+    font-size: 42px;    
+    
+}
+.filter-todo {
+    padding: 1.1rem;
+    border: none;
+    width: 170px;
+    color: rgb(201, 5, 201);
+    font-size: 1rem;
+    border-radius: 12px;
+
+}
+.listDiv {
+    display: flex;
+    justify-content: center;
+}
+.list-todo {
+    height: 500px;
+    margin-right: 200px;
+    min-width: 20%;
+    
+}
+.list-todo li {
+    list-style: none;
+    /* margin-top: 10px; */
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 25px;
+    
+     
+}
+
+   
+.complatedButten {
+    color: red;
+    background-color: white;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin-left: -8px;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in;
+   
+    
+}
+.complatedButten:hover {
+    color: green;
+    background-color: white;
+}
+.trash-button {
+
+    color: red;
+    background-color: white;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin-left: -8px;
+    font-size: 1.5rem;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all 0.2s ease-in;
+}
+.trash-button:hover {
+    color: white;
+    background-color: red;
+}
+
+.tododiv {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    transition: all 0.4s ease-in;
+}  
+.tododiv:hover{
+    margin: 10px 0px;
+    padding: 30px 0px;
+   
+    
+    
+}
+.complatedd {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+  
+}
